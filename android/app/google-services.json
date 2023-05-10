@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "973211419848",
+    "project_id": "lovebug-monitoring-app",
+    "storage_bucket": "lovebug-monitoring-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:973211419848:android:e0b1206f7df513643f91fd",
+        "android_client_info": {
+          "package_name": "com.system.tech.nauti.lovebug"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "973211419848-kjs37a62sjhsk9lshudfnsbka4bscch3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC1vLbfKsFn3fVmTxhAzgAkx1gEftwXJpc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "973211419848-kjs37a62sjhsk9lshudfnsbka4bscch3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
