@@ -142,7 +142,7 @@ class _ThrusterScreenState extends State<ThrusterScreen> {
                                   children: [
                                     Container(width: 20, height: 100, decoration: BoxDecoration(
                                         color: (lovebug.controlRegister.feedback[0] || lovebug.controlRegister.feedback[1]) ?
-                                         Colors.green : Colors.red),),
+                                         Colors.green : Colors.green),),
                                   ],
                                 )
                               ],

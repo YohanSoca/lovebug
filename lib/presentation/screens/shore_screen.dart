@@ -4,6 +4,7 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:lovebug/data/models/lovebug.dart';
 import 'package:lovebug/mqtt/mqtt_client.dart';
+import 'package:lovebug/utils/utils.dart';
 import 'package:mqtt_client/mqtt_client.dart';
 import 'package:syncfusion_flutter_gauges/gauges.dart';
 
@@ -173,6 +174,16 @@ class _ShoreScreenState extends State<ShoreScreen> {
                       ],
                   ),
                 ),
+              ),
+              Column(
+                children: [
+                  Text("Input contactor ${checkBit(lovebug.asea.data.wordOne, 1)}"),
+                  Text("Output contactor ${checkBit(lovebug.asea.data.wordOne, 2)}"),
+                  Text("PORT GEN SELECTED ${checkBit(lovebug.asea.data.wordOne, 10)}"),
+                  Text("PORT GEN ONLINE ${checkBit(lovebug.asea.data.wordOne, 11)}"),
+                  Text("STBD GEN SELECTED ${checkBit(lovebug.asea.data.wordOne, 13)}"),
+                  Text("STBD GEN ONLINE ${checkBit(lovebug.asea.data.wordOne, 14)}"),
+                ],
               )
             ],
           )

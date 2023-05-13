@@ -103,6 +103,7 @@ class _BilgesScreenState extends State<BilgesScreen> {
             MqttConnectionState.connected) {
            if(c[0].topic == 'lovebug') {
               setState(() {
+                print(lovebug.toString());
                 connected = true;
                 lovebug = Lovebug.fromJson(json.decode(pt as String));
               });
