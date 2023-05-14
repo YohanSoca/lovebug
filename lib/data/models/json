@@ -1,0 +1,68 @@
+{
+    "serial_cmd": "",
+    "date": 0,
+    "blinking": false,
+    "first_cycle": false,
+    "errors": "",
+    "over_temperature": false,
+    "name": "",
+    "serial": {
+        "status": {
+            "fill":"",
+            "shape":"",
+            "text":"",
+            "source":{
+                "id":"",
+                "type":"",
+                "name":""
+            }
+        }
+    },
+    "shore": {
+        "meters": [],
+        "status": {
+            "online": false,
+            "on": false
+        }
+    },
+    "converter": {
+        "meters": [],
+        "status": {
+            "online": false,
+            "on": false
+        }
+    },
+    "port": {
+        "meters": [],
+        "status": {
+            "online": false,
+            "master": false
+        }
+    },
+    "stbd": {
+        "meters": [],
+        "status": {
+            "online": false,
+            "master": false
+        }
+    },
+    "status_words": {
+        "word_zero": 0,
+        "word_one": 0,
+        "word_two": 0,
+        "word_three": 0
+    },
+    "pms": {
+        "set_port_as_master_requested": false,
+        "set_stbd_as_master_requested": false,
+        "turn_on_shore_power_requested": false,
+        "turn_off_shore_power_requested": false,
+        "turn_on_converter_requested": false,
+        "turn_off_converter_requested": false,
+        "last_transfer_status": "",
+        "transfer_in_progress": false,
+        "transfer_to_gen_requested": false,
+        "transfer_to_converter_requested": false,
+        "request_response": ""
+}
+}
