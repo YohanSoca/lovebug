@@ -53,7 +53,7 @@ class Asea {
         Port? stbd,
         StatusWords? statusWords,
         Pms? pms,
-    }) => 
+    }) =>
         Asea(
             serialCmd: serialCmd ?? this.serialCmd,
             date: date ?? this.date,
@@ -122,7 +122,7 @@ class Converter {
     Converter copyWith({
         List<dynamic>? meters,
         ConverterStatus? status,
-    }) => 
+    }) =>
         Converter(
             meters: meters ?? this.meters,
             status: status ?? this.status,
@@ -155,7 +155,7 @@ class ConverterStatus {
     ConverterStatus copyWith({
         bool? online,
         bool? on,
-    }) => 
+    }) =>
         ConverterStatus(
             online: online ?? this.online,
             on: on ?? this.on,
@@ -215,7 +215,7 @@ class Pms {
         bool? transferToGenRequested,
         bool? transferToConverterRequested,
         String? requestResponse,
-    }) => 
+    }) =>
         Pms(
             setPortAsMasterRequested: setPortAsMasterRequested ?? this.setPortAsMasterRequested,
             setStbdAsMasterRequested: setStbdAsMasterRequested ?? this.setStbdAsMasterRequested,
@@ -275,7 +275,7 @@ class Port {
     Port copyWith({
         List<dynamic>? meters,
         PortStatus? status,
-    }) => 
+    }) =>
         Port(
             meters: meters ?? this.meters,
             status: status ?? this.status,
@@ -308,7 +308,7 @@ class PortStatus {
     PortStatus copyWith({
         bool? online,
         bool? master,
-    }) => 
+    }) =>
         PortStatus(
             online: online ?? this.online,
             master: master ?? this.master,
@@ -338,7 +338,7 @@ class Serial {
 
     Serial copyWith({
         SerialStatus? status,
-    }) => 
+    }) =>
         Serial(
             status: status ?? this.status,
         );
@@ -374,7 +374,7 @@ class SerialStatus {
         String? shape,
         String? text,
         Source? source,
-    }) => 
+    }) =>
         SerialStatus(
             fill: fill ?? this.fill,
             shape: shape ?? this.shape,
@@ -416,7 +416,7 @@ class Source {
         String? id,
         String? type,
         String? name,
-    }) => 
+    }) =>
         Source(
             id: id ?? this.id,
             type: type ?? this.type,
@@ -441,10 +441,10 @@ class Source {
 }
 
 class StatusWords {
-    int wordZero;
-    int wordOne;
-    int wordTwo;
-    int wordThree;
+    String wordZero;
+    String wordOne;
+    String wordTwo;
+    String wordThree;
 
     StatusWords({
         required this.wordZero,
@@ -454,11 +454,11 @@ class StatusWords {
     });
 
     StatusWords copyWith({
-        int? wordZero,
-        int? wordOne,
-        int? wordTwo,
-        int? wordThree,
-    }) => 
+        String? wordZero,
+        String? wordOne,
+        String? wordTwo,
+        String? wordThree,
+    }) =>
         StatusWords(
             wordZero: wordZero ?? this.wordZero,
             wordOne: wordOne ?? this.wordOne,

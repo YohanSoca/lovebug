@@ -73,13 +73,13 @@ class _ShoreScreenState extends State<ShoreScreen> {
                 Container(
               width: 100,
               height: 50,
-              color: asea.pms.setPortAsMasterRequested ? Colors.green : Colors.grey,
+              color: asea.port.status.master ? Colors.green : Colors.grey,
               child: Text("Port master"),
             ),
             Container(
               width: 100,
               height: 50,
-              color: asea.pms.setStbdAsMasterRequested ? Colors.green : Colors.grey,
+              color: asea.stbd.status.master ? Colors.green : Colors.grey,
               child: Text("STBD master"),
             ),
               ],
@@ -290,9 +290,7 @@ class _ShoreScreenState extends State<ShoreScreen> {
             MqttConnectionState.connected) {
            if(c[0].topic == 'lovebug-asea-status-commads') {
               setState(() {
-                connected = true;
                 asea = Asea.fromJson(json.decode(pt));
-                print(asea.pms.transferInProgress);
               });
           }
         }

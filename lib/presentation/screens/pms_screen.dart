@@ -268,12 +268,12 @@ class _PMSScreenState extends State<PMSScreen> {
                               Row(
                                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                                 children: [
-                                  Text('${lovebug.stbd.data[4]} A', style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),),
-                                  Text('${lovebug.stbd.data[5]} A', style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),),
                                   Text('${lovebug.stbd.data[6]} A', style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),),
+                                  Text('${lovebug.stbd.data[7]} A', style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),),
+                                  Text('${lovebug.stbd.data[8]} A', style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),),
                                 ],
                               ),
-                              Text('${lovebug.stbd.data[20]} Hz', style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),)
+                              Text('${(lovebug.stbd.data[20] / 100).toInt()} Hz', style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),)
                             ],
                           ),
                         ),
